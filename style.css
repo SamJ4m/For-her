@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("clouds.jpg");
+  background-size: cover;       /* makes it fill the screen */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  background-attachment: fixed; /* optional: adds parallax effect on desktop */
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 10px;
+  color: #060404;
+  line-height: 1.2;
+}
+
+.emoji-img {
+  width: 140px;
+  height: 140px;
+  vertical-align: middle;
+ 
+}
+
+
+.letter {
+  background: #54f5a25b;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+.heart-button {
+  margin-top: 40px;
+  font-size: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /*animation: pulse 3s infinite;*/
+}
+
+.heart-button img {
+  width: 50px;
+  height: 50px;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.surprise {
+  display: none;
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #060708;
+}
