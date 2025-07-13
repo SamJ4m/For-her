@@ -1,26 +1,44 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("clouds.jpg");
-  background-size: cover;       /* makes it fill the screen */
-  background-position: center;  /* centers the image */
-  background-repeat: no-repeat; /* prevents tiling */
-  background-attachment: fixed; /* optional: adds parallax effect on desktop */
+  height: 100%;
+  /*background-image: url("clouds.jpg");*/
+  /*background-size: cover;*/       
+  /*background-position: center;*/ 
+  /*background-repeat: no-repeat;*/ 
+  /*background-attachment: fixed;*/ 
   font-family: 'Quicksand', sans-serif;
-  color: #333;
+  color: #242424;
   text-align: center;
 }
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* ensures user interactions pass through */
+  background-color: rgb(85, 150, 115); /*fallback*/
+}
+
+
+
 
 .container {
   padding: 30px;
 }
 
 h1 {
+  font-family: 'Chewy' , cursive;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 70px;
   margin-top: 10px;
-  color: #060404;
+  color: #8cf798;
   line-height: 1.2;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* optional: soft glow */
 }
 
 .emoji-img {
@@ -32,7 +50,7 @@ h1 {
 
 
 .letter {
-  background: #54f5a25b;
+  background: #8ddab15b;
   padding: 20px;
   border-radius: 15px;
   max-width: 700px;
